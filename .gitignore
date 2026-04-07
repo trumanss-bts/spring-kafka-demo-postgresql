@@ -1,0 +1,31 @@
+# Compiled files
+*.class
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Application files
+application-local.properties
+application-dev.properties
+
+# Kafka data (если есть локальные данные)
+/kafka-data/
