@@ -9,37 +9,38 @@
 
 
 
-sudo docker-compose up -d
+#sudo docker-compose up -d
 
-с пересборкой приложения
-sudo docker-compose up --build -d
+#с пересборкой приложения
+#sudo docker-compose up --build -d
 
-(если docker-compose не работает)
-sudo docker start testproject-postgres
-sudo docker start testproject-kafka
-sudo docker start testproject-app
+#(если docker-compose не работает)
+#sudo docker start testproject-postgres
+#sudo docker start testproject-kafka
+#sudo docker start testproject-app
 
-Проверка что всё работает
-sudo docker ps
+#Проверка что всё работает
+#sudo docker ps
 
-Проврка
-curl http://localhost:8080/testproject/api/tasks
-Остановка всех контейнеров
+#Проврка
+#curl http://localhost:8080/testproject/api/tasks
 
-sudo docker-compose down
-или 
-sudo docker stop testproject-app testproject-postgres testproject-kafka
+#Остановка всех контейнеров
+#sudo docker-compose down
 
-Перезапуск конкретного контейнера
-sudo docker restart testproject-app
+#или 
+#sudo docker stop testproject-app testproject-postgres testproject-kafka
 
-Логи
-sudo docker logs -f testproject-app
+#Перезапуск конкретного контейнера
+#sudo docker restart testproject-app
 
-Пересборка
-sudo docker-compose down
-sudo docker-compose up --build -d
+#Логи
+#sudo docker logs -f testproject-app
 
-удалить и собрать
-sudo docker rm testproject-app
-sudo docker-compose up -d
+#Пересборка
+#sudo docker-compose down
+#sudo docker-compose up --build -d
+
+#удалить и собрать
+#sudo docker rm testproject-app
+#sudo docker-compose up -d
